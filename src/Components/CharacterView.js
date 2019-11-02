@@ -14,6 +14,7 @@ const CharacterView = () => {
         .then(response => {
             let data = response.data.data.results
             setCharacters(data)
+            setOffset(offset + 50)
         })
     },[offset])
 
